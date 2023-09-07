@@ -7,9 +7,9 @@ function fibonacci(num) {
 		return 1;
 	}
 	else{
-		return num-1+num-2;
+		return fibonacci(num - 1) + fibonacci(num - 2);
 	}
-	return;
+	
 }
 
 module.exports = fibonacci;
